@@ -1,7 +1,6 @@
 const api = "https://api.adviceslip.com/advice";
 let id = document.querySelector("#qoute-id");
-let advice = document.querySelector(".advice-content span");
-let icon = document.querySelector(".icon-box");
+let advice = document.querySelector(".advice-content");
 
 async function getData() {
   let res = await fetch(api);
@@ -20,7 +19,3 @@ getData();
 setInterval(() => {
   getData();
 }, 5000);
-
-icon.addEventListener("click", () => {
-  window.location = "https://www.linkedin.com/in/ahmed-el-zaki/";
-});

@@ -29,6 +29,8 @@ body {
 @media (max-width: 768px) {
   .advice {
     max-width: 300px;
+    padding: 10px 15px 50px 15px;
+
   }
   .advice .advice-img {
     content: url("../images/pattern-divider-mobile.svg");
